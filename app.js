@@ -21,11 +21,18 @@ function play(playerChoice) {
       console.log('Lose')
     }
   }
-  else if (playerChoice == 'rock') {
-    if (compChoice == '')
+  else {
+    if (compChoice == 'paper') {
+      console.log('Lose')
+    }
+  }
+
+  else {
+    if (compChoice == 'scissors') {
+      console.log('Win')
+    }
   }
 
 }
 
-  }
-}
+
