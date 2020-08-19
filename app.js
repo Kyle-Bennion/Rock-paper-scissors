@@ -1,38 +1,41 @@
 
 function play(playerChoice) {
-  let compChoice = 'rock'
+  let choices = ['rock', 'paper', 'scissors']
+  let randomValue = Math.floor(Math.random() * choices.length - 0.01)
+  let compChoice = choices[randomValue]
 
   if (compChoice == playerChoice) {
-    console.log('tie')
+    drawResult('tie')
   }
   else if (playerChoice == 'scissors') {
     if (compChoice == 'rock') {
-      console.log('Lose')
+      drawResult('Lose')
     }
     else {
-      console.log('win')
+      drawResult('win')
     }
   }
   else if (playerChoice == 'paper') {
     if (compChoice == 'rock') {
-      console.log('win')
+      drawResult('win')
     }
     else {
-      console.log('Lose')
+      drawResult('Lose')
     }
   }
   else {
     if (compChoice == 'paper') {
-      console.log('Lose')
+      drawResult('Lose')
+    }
+    else {
+      if (compChoice == 'scissors') {
+        drawResult('Win')
+      }
     }
   }
-
-  else {
-    if (compChoice == 'scissors') {
-      console.log('Win')
-    }
-  }
-
 }
 
+function drawResult(result) {
+
+}
 
