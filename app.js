@@ -36,6 +36,7 @@ function play(playerChoice) {
 }
 
 function drawResult(result) {
-
+  let elem = document.getElementById("result")
+  elem.innerText
 }
 
